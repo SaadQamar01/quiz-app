@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Quiz</title>
+</head>
+<link rel="stylesheet" href="Quiz.css">
+<body>
+    <div class="main-container" id="startquiz">
+        <h1>Khush~Amdeed</h1>
+        <h1>Assalam~O~Alaikum Dost,Aaye Shuru karty hai</h1>
+        <h2>General Knowlege Test</h2>
+        <h2>Total Questions: 10</h2>
+        <h2>Time: 10 mins</h2>
+        <h2>Passing marks: 60%</h2>
+        <button  id="start" onclick="startQuiz()"> Start</button>
+    </div>
+
+        <div class="main-container-quiz" id="quiz" style="display:none">
+        <div id="timer" style="text-align: right; display:none"> </div>
+
+
+        <!--<h1> Question</h1>-->
+        <p id="ques"></p>
+        <input id="opt1" name="opt" value='a' type="radio" onclick="enableNextBtn()"><label id="text1"></label><br /> <br
+        />
+        <input id="opt2" name="opt" value='b' type="radio" onclick="enableNextBtn()"><label id="text2"></label><br /><br
+        />
+        <input id="opt3" name="opt" value='c' type="radio" onclick="enableNextBtn()"><label id="text3"></label><br /><br
+        />
+        <input id="opt4" name="opt" value='d' type="radio" onclick="enableNextBtn()"><label id="text4"></label><br /><br/>
+
+        <button id="next"  onclick="next()" disabled >Next</button>
+    </div>
+
+    <div id="result" style="display:none">
+        <h1 id="remarks"></h1>
+        <h1 id="ans"></h1>
+        <h1 id="score"></h1>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
